@@ -193,7 +193,7 @@
       flex-wrap: wrap;
       width: auto;
       justify-content: space-between;
-      padding: 3rem 1rem;
+      padding: 2rem 1rem;
    } 
    .rowtwo{
      display: flex;   
@@ -366,15 +366,7 @@
    text-decoration: none;
    font-weight: 600;
 }
-.lineme1{
-   height: 3px; 
-   background-color: rgb(209, 107, 35);
-   width: 50px;
-   margin-bottom: -2rem;
- }
-   .pass {
-      margin-left:4rem ;
-   }
+
    span h1 {
       font-size: 34px;
       padding: 12px; 
@@ -459,6 +451,15 @@ div.gallery {
     justify-content: space-between;
     margin-top: 3rem;
  }
+ .lineme1{
+   height: 3px; 
+   background-color: rgb(209, 107, 35);
+   width: 50px;
+   margin-bottom: -2rem;
+ }
+   .pass {
+      margin-left:4rem ;
+   }
  .conwrit{
     display: flex;
  }
@@ -482,7 +483,7 @@ div.gallery {
 }
  .inw p {
   margin-top: 10px;
-  color: #b7b7b7;
+  color: #e9e7e7;
   font-size: 16px;
   font-weight: 700;
  }
@@ -858,12 +859,12 @@ div.gallery {
         }
         .cen {
            position: absolute;
-           top: 50%;
+           top: 70%;
            left: 50%;
            transform: (-50%, -50%);
         }
         .cen h1{
-         color: #fff;
+         color: rgba(255, 255, 255, 0.904);
          font-size: 40px;
          font-weight: 800;
         }
@@ -967,31 +968,35 @@ div.gallery {
            justify-content: center;
            text-align: center;
         }
-        .box1{
+        .card{
+           width: 50rem;
            text-align: center;
-            border: 1px solid #f4f6ff;
-            background-color: #f9fbfd;
+           border: 1px solid #ebeffc;
+           background-color: #f9fbfd;
             padding: 50px 30px 40px;
-            /* margin-top: -1px;
-            margin-left: -1px; */
         }
-        .box1 img {
+        .card:hover {
+         background-color: #fff;
+        }
+        .boximg {
            width: 20%;
            margin-bottom: 26px;
+           margin-left: 8rem;
         }
-        .boxwrite h3 {
+        .card-body h5{
            font-size: 20px;
             color: #0e0e0e;
             line-height: 1.2;
             margin: 0 0 15px;
             font-weight: 700;
         }
-        .boxwrite p {
+        .card-body p {
          font-size: 16px;
          line-height: 26px;
          color: #000;
          margin: 20px;
         }
+        /* for about */
         @media screen and (max-width:750px) {
            body{
               width: 100%;
@@ -1014,7 +1019,7 @@ div.gallery {
          .cen h1{
           color: #fff;
           font-size: 20px;
-          font-weight: 700;
+          font-weight: 600;
          }
            .about {
              padding: 10px;
@@ -1023,8 +1028,25 @@ div.gallery {
             display: none;
          }
          .writingabout h1 {
-            font-size: 25px;
+            font-size: 21px;
+            margin: 0 0 10px;
+            font-weight: 600;
+            line-height: 1.2;
          }
+         .lineabout{
+            position: absolute;
+            height: 125px;
+            width: 3px; 
+            margin-left: 9px;
+           }
+           .writingabout p   {
+           letter-spacing: 0.2em;
+           font-weight: 400;
+           margin-top: 5px;
+           padding-bottom: -4px;
+           transform-origin: 0 50%;
+           -webkit-transform-origin: 0 50%;
+       }
          .service{
             display: block;
          }
@@ -1036,6 +1058,123 @@ div.gallery {
             display: block;
             justify-content: center;
             text-align: center;
+         }  
+         .card{
+            width: 100%;
+            text-align: center;
+            border: 1px solid #ebeffc;
+            background-color: #f9fbfd;
+            padding: 5px;
          }
-           
+        .boximg {
+         width: 20%;
+         margin-bottom: 20px;
+         margin-left: 10rem;
+      }
+      .card-body h5{
+         font-size: 16px;
+          line-height: 1.2;
+          margin: 0 0 11px;
+      }
+      .card-body p {
+         font-size: 14px;
+         line-height: 20px;
+         margin: 0;
         }
+      }
+        /* career style */
+        #bgcareer { 
+         width: 100%;
+         height: auto;
+         background-size: cover;
+         background-position:center;
+         background-repeat:no-repeat;
+         z-index: 0.9;
+        }
+        .pcare p {
+           text-align: center;
+          font-size: 16px;
+          padding: 15px;
+        }
+        .wedo h4 {
+           line-height: 1.2;
+           font-weight: 600;
+           font-size: 24px;
+           margin: 2rem 0;
+        }
+        .boxcon  {
+           color: #DB7515;
+           font-size: 65px;
+        }
+        .card{
+           width: 50rem;
+         text-align: center;
+         border: 1px solid #ebeffc;
+         background-color: #f9fbfd;
+          padding: 50px 30px 40px;
+      }
+      .offtwo a {
+         text-decoration: none;
+         color: #d1651a;
+      }
+      .offtwo a:hover {
+         color:#fd7e14;
+      }
+
+      /* for career */
+      @media screen and (max-width:750px) {
+         .pcare p {
+           font-size: 12px;
+           padding: 0;
+         }  
+         .wedo h4 {
+            line-height: 1;
+            font-weight: 600;
+            font-size: 20px;
+            margin: 1rem 0;
+         }
+         .boxcon  {
+            font-size: 40px;
+         }
+         .card{
+            width: 100%;
+             padding: 20px;
+         }
+      }
+      
+
+      
+      /* for contact */
+     .contactsection {
+      background-color: #000000;
+      opacity: 0.95;
+      transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+      margin-bottom: 3rem;
+     }
+     .getincont {
+      display: flex;
+      justify-content: space-between;      
+   }
+   .linemec{
+      height: 3px; 
+      background-color: #fff;
+      width: 50px;
+      margin-bottom: -2rem;
+    }
+    .pathem {
+       padding: 10rem 0; 
+    }
+    .getincont p, h1 {
+       color: #e9e7e7;
+    }
+   
+    @media screen and (max-width:750px) {
+      .getincont {
+         display: block;
+         justify-content: space-between;
+         margin-top: 3rem;
+      }
+      .linemec{
+         margin-bottom: 2rem;
+       }
+    }
