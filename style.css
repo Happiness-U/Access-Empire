@@ -858,7 +858,7 @@ div.gallery {
         }
         .cen {
            position: absolute;
-           top: 30%;
+           top: 50%;
            left: 50%;
            transform: (-50%, -50%);
         }
@@ -1005,6 +1005,17 @@ div.gallery {
             background-repeat:no-repeat;
             z-index: 0.9;
            }
+           .cen {
+            position: absolute;
+            top: 15%;
+            left: 40%;
+            transform: (-50%, -50%);
+         }
+         .cen h1{
+          color: #fff;
+          font-size: 20px;
+          font-weight: 700;
+         }
            .about {
              padding: 10px;
            }
